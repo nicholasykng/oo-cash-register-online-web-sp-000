@@ -7,8 +7,17 @@ def initialize(discount = 0)
 end
 def add_item(title, price, number = 1)
   @total += price * number
-  @items << title
+  if number > 1
+    counter = 0
+    while counter < number
+      @items << title
+      counter += 1
+    end
+  else
+    @items << item
+  end
 end
+
 def apply_discount
   if @discount == 0
     "There is no discount to apply."
