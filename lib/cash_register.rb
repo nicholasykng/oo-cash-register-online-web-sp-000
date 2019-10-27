@@ -18,6 +18,6 @@ def apply_discount
 end
 end
 def items
-  @items
+  self.@items
 end
 end
