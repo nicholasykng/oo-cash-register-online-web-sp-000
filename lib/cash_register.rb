@@ -8,8 +8,8 @@ def initialize(discount = 0)
 end
 
 def add_item(title, price, number = 1)
+  @price = price
   @total += price * number
-  @last_transaction = @total
   if number > 1
     counter = 0
     while counter < number
