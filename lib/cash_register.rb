@@ -9,3 +9,4 @@ def add_item(title, price, number = 1)
   self.total = price * number
   @items << title
 end
+end
