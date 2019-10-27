@@ -26,7 +26,6 @@ def apply_discount
     "After the discount, the total comes to $#{@total}."
 end
 end
-def items
-  return @items
-end
+
+
 end
