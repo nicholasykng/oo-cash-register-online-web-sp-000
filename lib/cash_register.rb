@@ -10,11 +10,11 @@ def add_item(title, price, number = 1)
   @items << title
 end
 def apply_discount
-  if @discount
+  if @discount == 0
+    "There is no discount to apply"
+  else @discount
     @total = @total * (100-discount) / 100
     "After the discount, the total comes to $#{@total}."
-  else @discount == 0
-    "There is no discount to apply."
 end
 end
 
