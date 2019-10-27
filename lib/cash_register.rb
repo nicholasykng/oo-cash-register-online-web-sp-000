@@ -19,6 +19,7 @@ def add_item(title, price, number = 1)
   else
     @items << title
   end
+  @total
 end
 
 def apply_discount
