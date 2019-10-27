@@ -33,6 +33,6 @@ end
 
 def void_last_transaction
   @total -= @price * @number
-  return @total
+  
 end
 end
