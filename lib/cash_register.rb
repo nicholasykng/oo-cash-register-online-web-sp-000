@@ -9,7 +9,7 @@ end
 
 def add_item(title, price, number = 1)
   @total += price * number
-  @last_transaction_amount = @total
+  @last_transaction = @total
   if number > 1
     counter = 0
     while counter < number
@@ -31,6 +31,6 @@ end
 end
 
 def void_last_transaction
-  @total -= @
+  @total -= @last_transaction_amount
 end
 end
